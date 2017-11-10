@@ -690,7 +690,7 @@ angular.module('angularPSGrid.view1', ['ngRoute'])
     app.directive("psGrid", function () {
         return {
             restrict: "E",
-            templateUrl: "grid.html",
+            templateUrl: "bower_components/angular-ps-grid/grid.html",
             scope: {
                 controller: "@",
                 gridId: "@",
