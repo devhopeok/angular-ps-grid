@@ -1,0 +1,28 @@
+{
+  "name": "angular-ps-grid",
+  "authors": [
+    "Henry Pereira <mono_devok1111@protonmail.com>"
+  ],
+  "description": "This is the directive for PSGrid",
+  "main": "directive.js",
+  "keywords": [
+    "PSGrid"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.4.3",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "html5-boilerplate": "^5.3.0",
+    "angular-bootstrap": "^2.5.0"
+  },
+}
