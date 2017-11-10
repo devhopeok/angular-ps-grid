@@ -1,0 +1,27 @@
+﻿<div class="grid-container" ng-class="{'padding-right-2': hasExternalHeader}" data-ng-controller="grid as vm">
+    <div ng-if="!hideGridTitle" class="grid-title">
+        <div ng-class="{ 'grid-title-left' : isLoading }">
+            <div ng-if="isLoading" aria-hidden="true">Loading</div>
+        </div>
+        <span ng-if="!isLoading" title="Clear All Filters & Sorts" ng-click="clearAllFiltersAndSorts()">{{vm.gridTitle}}</span>
+        <span ng-if="!isLoading" title="Clear All Filters & Sorts" ng-click="clearAllFiltersAndSorts()">{{vm.gridLabel}}</span>
+        <div class="pull-right inline-flex">
+            <div custom-pre-header></div>
+            <a title="Clear All Filters" ng-click="clearAllFilters()" ng-show="!vm.hideClearFilters">Clear Filters</a>
+            <div custom-post-header></div>
+        </div>
+    </div>
+    <div ng-cloack 
+         ui-if="gridData.data.length > 0"
+         ui-grid="gridOptions"
+         ui-grid-pagination
+         ui-grid-auto-resize
+         ui-grid-selection
+         ui-grid-pinning
+         ui-grid-resize-columns
+         ui-grid-save-state
+         ui-grid-edit
+         ui-grid-row-edit
+         class="grid" >
+    </div>
+</div>

@@ -537,20 +537,20 @@ angular.module('angularPSGrid.view1', ['ngRoute'])
 });
 'use strict';
 
-describe('angularPSGrid.view1 module', function() {
+// describe('angularPSGrid.view1 module', function() {
 
-  beforeEach(module('angularPSGrid.view1'));
+//   beforeEach(module('angularPSGrid.view1'));
 
-  describe('view1 controller', function(){
+//   describe('view1 controller', function(){
 
-    it('should ....', inject(function($controller) {
-      //spec body
-      var view1Ctrl = $controller('View1Ctrl');
-      expect(view1Ctrl).toBeDefined();
-    }));
+//     it('should ....', inject(function($controller) {
+//       //spec body
+//       var view1Ctrl = $controller('View1Ctrl');
+//       expect(view1Ctrl).toBeDefined();
+//     }));
 
-  });
-});
+//   });
+// });
 (function () {
     'use strict';
 
@@ -690,7 +690,7 @@ describe('angularPSGrid.view1 module', function() {
     app.directive("psGrid", function () {
         return {
             restrict: "E",
-            templateUrl: "grid/grid.html",
+            templateUrl: "grid.html",
             scope: {
                 controller: "@",
                 gridId: "@",
@@ -832,19 +832,19 @@ angular.module('angularPSGrid.version.interpolate-filter', [])
 
 'use strict';
 
-describe('angularPSGrid.version module', function() {
-  beforeEach(module('angularPSGrid.version'));
+// describe('angularPSGrid.version module', function() {
+//   beforeEach(module('angularPSGrid.version'));
 
-  describe('interpolate filter', function() {
-    beforeEach(module(function($provide) {
-      $provide.value('version', 'TEST_VER');
-    }));
+//   describe('interpolate filter', function() {
+//     beforeEach(module(function($provide) {
+//       $provide.value('version', 'TEST_VER');
+//     }));
 
-    it('should replace VERSION', inject(function(interpolateFilter) {
-      expect(interpolateFilter('before %VERSION% after')).toEqual('before TEST_VER after');
-    }));
-  });
-});
+//     it('should replace VERSION', inject(function(interpolateFilter) {
+//       expect(interpolateFilter('before %VERSION% after')).toEqual('before TEST_VER after');
+//     }));
+//   });
+// });
 
 'use strict';
 
@@ -858,21 +858,21 @@ angular.module('angularPSGrid.version.version-directive', [])
 
 'use strict';
 
-describe('angularPSGrid.version module', function() {
-  beforeEach(module('angularPSGrid.version'));
+// describe('angularPSGrid.version module', function() {
+//   beforeEach(module('angularPSGrid.version'));
 
-  describe('app-version directive', function() {
-    it('should print current version', function() {
-      module(function($provide) {
-        $provide.value('version', 'TEST_VER');
-      });
-      inject(function($compile, $rootScope) {
-        var element = $compile('<span app-version></span>')($rootScope);
-        expect(element.text()).toEqual('TEST_VER');
-      });
-    });
-  });
-});
+//   describe('app-version directive', function() {
+//     it('should print current version', function() {
+//       module(function($provide) {
+//         $provide.value('version', 'TEST_VER');
+//       });
+//       inject(function($compile, $rootScope) {
+//         var element = $compile('<span app-version></span>')($rootScope);
+//         expect(element.text()).toEqual('TEST_VER');
+//       });
+//     });
+//   });
+// });
 
 'use strict';
 
@@ -885,15 +885,15 @@ angular.module('angularPSGrid.version', [
 
 'use strict';
 
-describe('angularPSGrid.version module', function() {
-  beforeEach(module('angularPSGrid.version'));
+// describe('angularPSGrid.version module', function() {
+//   beforeEach(module('angularPSGrid.version'));
 
-  describe('version service', function() {
-    it('should return current version', inject(function(version) {
-      expect(version).toEqual('0.1');
-    }));
-  });
-});
+//   describe('version service', function() {
+//     it('should return current version', inject(function(version) {
+//       expect(version).toEqual('0.1');
+//     }));
+//   });
+// });
 
 /**
  * @license AngularJS v1.5.11
@@ -33516,11 +33516,11 @@ $provide.value("$locale", {
 })(window);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-require('./angular');
-module.exports = angular;
+//require('./angular');
+//module.exports = angular;
 
-require('./ui-bootstrap-tpls');
-module.exports = 'ui.bootstrap';
+//require('./ui-bootstrap-tpls');
+//module.exports = 'ui.bootstrap';
 
 /*
  * angular-ui-bootstrap
@@ -52366,14 +52366,14 @@ angular.mock.$RootScopeDecorator = ['$delegate', function($delegate) {
 
 })(window, window.angular);
 
-require('./angular-mocks');
-module.exports = 'ngAnimateMock';
+// require('./angular-mocks');
+// module.exports = 'ngAnimateMock';
 
-require('./angular-mocks');
-module.exports = 'ngMock';
+// require('./angular-mocks');
+// module.exports = 'ngMock';
 
-require('./angular-mocks');
-module.exports = 'ngMockE2E';
+// require('./angular-mocks');
+// module.exports = 'ngMockE2E';
 
 /**
  * @license AngularJS v1.5.11
@@ -53447,181 +53447,181 @@ function ngViewFillContentFactory($compile, $controller, $route) {
 
 })(window, window.angular);
 
-require('./angular-route');
-module.exports = 'ngRoute';
+// require('./angular-route');
+// module.exports = 'ngRoute';
 
-var fs = require('fs');
-var path = require('path');
+//var fs = require('fs');
+// var path = require('path');
 
-var gulp = require('gulp');
+// var gulp = require('gulp');
 
 // Load all gulp plugins automatically
 // and attach them to the `plugins` object
-var plugins = require('gulp-load-plugins')();
+// var plugins = require('gulp-load-plugins')();
 
 // Temporary solution until gulp 4
 // https://github.com/gulpjs/gulp/issues/355
-var runSequence = require('run-sequence');
+// var runSequence = require('run-sequence');
 
-var pkg = require('./package.json');
-var dirs = pkg['h5bp-configs'].directories;
+// var pkg = require('./package.json');
+//var dirs = pkg['h5bp-configs'].directories;
 
 // ---------------------------------------------------------------------
 // | Helper tasks                                                      |
 // ---------------------------------------------------------------------
 
-gulp.task('archive:create_archive_dir', function () {
-    fs.mkdirSync(path.resolve(dirs.archive), '0755');
-});
+// gulp.task('archive:create_archive_dir', function () {
+//     fs.mkdirSync(path.resolve(dirs.archive), '0755');
+// });
 
-gulp.task('archive:zip', function (done) {
+// gulp.task('archive:zip', function (done) {
 
-    var archiveName = path.resolve(dirs.archive, pkg.name + '_v' + pkg.version + '.zip');
-    var archiver = require('archiver')('zip');
-    var files = require('glob').sync('**/*.*', {
-        'cwd': dirs.dist,
-        'dot': true // include hidden files
-    });
-    var output = fs.createWriteStream(archiveName);
+//     var archiveName = path.resolve(dirs.archive, pkg.name + '_v' + pkg.version + '.zip');
+//     var archiver = require('archiver')('zip');
+//     var files = require('glob').sync('**/*.*', {
+//         'cwd': dirs.dist,
+//         'dot': true // include hidden files
+//     });
+//     var output = fs.createWriteStream(archiveName);
 
-    archiver.on('error', function (error) {
-        done();
-        throw error;
-    });
+//     archiver.on('error', function (error) {
+//         done();
+//         throw error;
+//     });
 
-    output.on('close', done);
+//     output.on('close', done);
 
-    files.forEach(function (file) {
+//     files.forEach(function (file) {
 
-        var filePath = path.resolve(dirs.dist, file);
+//         var filePath = path.resolve(dirs.dist, file);
 
-        // `archiver.bulk` does not maintain the file
-        // permissions, so we need to add files individually
-        archiver.append(fs.createReadStream(filePath), {
-            'name': file,
-            'mode': fs.statSync(filePath).mode
-        });
+//         // `archiver.bulk` does not maintain the file
+//         // permissions, so we need to add files individually
+//         archiver.append(fs.createReadStream(filePath), {
+//             'name': file,
+//             'mode': fs.statSync(filePath).mode
+//         });
 
-    });
+//     });
 
-    archiver.pipe(output);
-    archiver.finalize();
+//     archiver.pipe(output);
+//     archiver.finalize();
 
-});
+// });
 
-gulp.task('clean', function (done) {
-    require('del')([
-        dirs.archive,
-        dirs.dist
-    ]).then(function () {
-        done();
-    });
-});
+// gulp.task('clean', function (done) {
+//     require('del')([
+//         dirs.archive,
+//         dirs.dist
+//     ]).then(function () {
+//         done();
+//     });
+// });
 
-gulp.task('copy', [
-    'copy:.htaccess',
-    'copy:index.html',
-    'copy:jquery',
-    'copy:license',
-    'copy:main.css',
-    'copy:misc',
-    'copy:normalize'
-]);
+// gulp.task('copy', [
+//     'copy:.htaccess',
+//     'copy:index.html',
+//     'copy:jquery',
+//     'copy:license',
+//     'copy:main.css',
+//     'copy:misc',
+//     'copy:normalize'
+// ]);
 
-gulp.task('copy:.htaccess', function () {
-    return gulp.src('node_modules/apache-server-configs/dist/.htaccess')
-               .pipe(plugins.replace(/# ErrorDocument/g, 'ErrorDocument'))
-               .pipe(gulp.dest(dirs.dist));
-});
+// gulp.task('copy:.htaccess', function () {
+//     return gulp.src('node_modules/apache-server-configs/dist/.htaccess')
+//                .pipe(plugins.replace(/# ErrorDocument/g, 'ErrorDocument'))
+//                .pipe(gulp.dest(dirs.dist));
+// });
 
-gulp.task('copy:index.html', function () {
-    return gulp.src(dirs.src + '/index.html')
-               .pipe(plugins.replace(/{{JQUERY_VERSION}}/g, pkg.devDependencies.jquery))
-               .pipe(gulp.dest(dirs.dist));
-});
+// gulp.task('copy:index.html', function () {
+//     return gulp.src(dirs.src + '/index.html')
+//                .pipe(plugins.replace(/{{JQUERY_VERSION}}/g, pkg.devDependencies.jquery))
+//                .pipe(gulp.dest(dirs.dist));
+// });
 
-gulp.task('copy:jquery', function () {
-    return gulp.src(['node_modules/jquery/dist/jquery.min.js'])
-               .pipe(plugins.rename('jquery-' + pkg.devDependencies.jquery + '.min.js'))
-               .pipe(gulp.dest(dirs.dist + '/js/vendor'));
-});
+// gulp.task('copy:jquery', function () {
+//     return gulp.src(['node_modules/jquery/dist/jquery.min.js'])
+//                .pipe(plugins.rename('jquery-' + pkg.devDependencies.jquery + '.min.js'))
+//                .pipe(gulp.dest(dirs.dist + '/js/vendor'));
+// });
 
-gulp.task('copy:license', function () {
-    return gulp.src('LICENSE.txt')
-               .pipe(gulp.dest(dirs.dist));
-});
+// gulp.task('copy:license', function () {
+//     return gulp.src('LICENSE.txt')
+//                .pipe(gulp.dest(dirs.dist));
+// });
 
-gulp.task('copy:main.css', function () {
+// gulp.task('copy:main.css', function () {
 
-    var banner = '/*! HTML5 Boilerplate v' + pkg.version +
-                    ' | ' + pkg.license.type + ' License' +
-                    ' | ' + pkg.homepage + ' */\n\n';
+//     var banner = '/*! HTML5 Boilerplate v' + pkg.version +
+//                     ' | ' + pkg.license.type + ' License' +
+//                     ' | ' + pkg.homepage + ' */\n\n';
 
-    return gulp.src(dirs.src + '/css/main.css')
-               .pipe(plugins.header(banner))
-               .pipe(plugins.autoprefixer({
-                   browsers: ['last 2 versions', 'ie >= 8', '> 1%'],
-                   cascade: false
-               }))
-               .pipe(gulp.dest(dirs.dist + '/css'));
-});
+//     return gulp.src(dirs.src + '/css/main.css')
+//                .pipe(plugins.header(banner))
+//                .pipe(plugins.autoprefixer({
+//                    browsers: ['last 2 versions', 'ie >= 8', '> 1%'],
+//                    cascade: false
+//                }))
+//                .pipe(gulp.dest(dirs.dist + '/css'));
+// });
 
-gulp.task('copy:misc', function () {
-    return gulp.src([
+// gulp.task('copy:misc', function () {
+//     return gulp.src([
 
-        // Copy all files
-        dirs.src + '/**/*',
+//         // Copy all files
+//         dirs.src + '/**/*',
 
-        // Exclude the following files
-        // (other tasks will handle the copying of these files)
-        '!' + dirs.src + '/css/main.css',
-        '!' + dirs.src + '/index.html'
+//         // Exclude the following files
+//         // (other tasks will handle the copying of these files)
+//         '!' + dirs.src + '/css/main.css',
+//         '!' + dirs.src + '/index.html'
 
-    ], {
+//     ], {
 
-        // Include hidden files by default
-        dot: true
+//         // Include hidden files by default
+//         dot: true
 
-    }).pipe(gulp.dest(dirs.dist));
-});
+//     }).pipe(gulp.dest(dirs.dist));
+// });
 
-gulp.task('copy:normalize', function () {
-    return gulp.src('node_modules/normalize.css/normalize.css')
-               .pipe(gulp.dest(dirs.dist + '/css'));
-});
+// gulp.task('copy:normalize', function () {
+//     return gulp.src('node_modules/normalize.css/normalize.css')
+//                .pipe(gulp.dest(dirs.dist + '/css'));
+// });
 
-gulp.task('lint:js', function () {
-    return gulp.src([
-        'gulpfile.js',
-        dirs.src + '/js/*.js',
-        dirs.test + '/*.js'
-    ]).pipe(plugins.jscs())
-      .pipe(plugins.jshint())
-      .pipe(plugins.jshint.reporter('jshint-stylish'))
-      .pipe(plugins.jshint.reporter('fail'));
-});
+// gulp.task('lint:js', function () {
+//     return gulp.src([
+//         'gulpfile.js',
+//         dirs.src + '/js/*.js',
+//         dirs.test + '/*.js'
+//     ]).pipe(plugins.jscs())
+//       .pipe(plugins.jshint())
+//       .pipe(plugins.jshint.reporter('jshint-stylish'))
+//       .pipe(plugins.jshint.reporter('fail'));
+// });
 
 
-// ---------------------------------------------------------------------
-// | Main tasks                                                        |
-// ---------------------------------------------------------------------
+// // ---------------------------------------------------------------------
+// // | Main tasks                                                        |
+// // ---------------------------------------------------------------------
 
-gulp.task('archive', function (done) {
-    runSequence(
-        'build',
-        'archive:create_archive_dir',
-        'archive:zip',
-    done);
-});
+// gulp.task('archive', function (done) {
+//     runSequence(
+//         'build',
+//         'archive:create_archive_dir',
+//         'archive:zip',
+//     done);
+// });
 
-gulp.task('build', function (done) {
-    runSequence(
-        ['clean', 'lint:js'],
-        'copy',
-    done);
-});
+// gulp.task('build', function (done) {
+//     runSequence(
+//         ['clean', 'lint:js'],
+//         'copy',
+//     done);
+// });
 
-gulp.task('default', ['build']);
+// gulp.task('default', ['build']);
 
 /*!
  * ui-grid - v3.0.5 - 2015-08-26
@@ -80269,21 +80269,21 @@ angular.module('ui.grid').run(['$templateCache', function($templateCache) {
 
 }]);
 
-(function($){$.fn.easyTabs=function(option){var param=jQuery.extend({fadeSpeed:"fast",defaultContent:1,activeClass:'active'},option);$(this).each(function(){var thisId="#"+this.id;if(param.defaultContent==''){param.defaultContent=1;}
-if(typeof param.defaultContent=="number")
-{var defaultTab=$(thisId+" .tabs li:eq("+(param.defaultContent-1)+") a").attr('href').substr(1);}else{var defaultTab=param.defaultContent;}
-$(thisId+" .tabs li a").each(function(){var tabToHide=$(this).attr('href').substr(1);$("#"+tabToHide).addClass('easytabs-tab-content');});hideAll();changeContent(defaultTab);function hideAll(){$(thisId+" .easytabs-tab-content").hide();}
-function changeContent(tabId){hideAll();$(thisId+" .tabs li").removeClass(param.activeClass);$(thisId+" .tabs li a[href=#"+tabId+"]").closest('li').addClass(param.activeClass);if(param.fadeSpeed!="none")
-{$(thisId+" #"+tabId).fadeIn(param.fadeSpeed);}else{$(thisId+" #"+tabId).show();}}
-$(thisId+" .tabs li").click(function(){var tabId=$(this).find('a').attr('href').substr(1);changeContent(tabId);return false;});});}})(jQuery);
+// (function($){$.fn.easyTabs=function(option){var param=jQuery.extend({fadeSpeed:"fast",defaultContent:1,activeClass:'active'},option);$(this).each(function(){var thisId="#"+this.id;if(param.defaultContent==''){param.defaultContent=1;}
+// if(typeof param.defaultContent=="number")
+// {var defaultTab=$(thisId+" .tabs li:eq("+(param.defaultContent-1)+") a").attr('href').substr(1);}else{var defaultTab=param.defaultContent;}
+// $(thisId+" .tabs li a").each(function(){var tabToHide=$(this).attr('href').substr(1);$("#"+tabToHide).addClass('easytabs-tab-content');});hideAll();changeContent(defaultTab);function hideAll(){$(thisId+" .easytabs-tab-content").hide();}
+// function changeContent(tabId){hideAll();$(thisId+" .tabs li").removeClass(param.activeClass);$(thisId+" .tabs li a[href=#"+tabId+"]").closest('li').addClass(param.activeClass);if(param.fadeSpeed!="none")
+// {$(thisId+" #"+tabId).fadeIn(param.fadeSpeed);}else{$(thisId+" #"+tabId).show();}}
+// $(thisId+" .tabs li").click(function(){var tabId=$(this).find('a').attr('href').substr(1);changeContent(tabId);return false;});});}})(jQuery);
 /* jshint mocha: true */
 
-var assert = require('assert');
-var fs = require('fs');
-var path = require('path');
+// var assert = require('assert');
+// var fs = require('fs');
+// var path = require('path');
 
-var pkg = require('./../package.json');
-var dirs = pkg['h5bp-configs'].directories;
+// var pkg = require('./../package.json');
+// var dirs = pkg['h5bp-configs'].directories;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -80360,64 +80360,64 @@ runTests();
 
 /* jshint mocha: true */
 
-var assert = require('assert');
-var fs = require('fs');
-var path = require('path');
+// var assert = require('assert');
+// var fs = require('fs');
+// var path = require('path');
 
-var pkg = require('./../package.json');
-var dirs = pkg['h5bp-configs'].directories;
+// var pkg = require('./../package.json');
+// var dirs = pkg['h5bp-configs'].directories;
 
-var expectedFilesInArchiveDir = [
-    pkg.name + '_v' + pkg.version + '.zip'
-];
+// var expectedFilesInArchiveDir = [
+//     pkg.name + '_v' + pkg.version + '.zip'
+// ];
 
-var expectedFilesInDistDir = [
+// var expectedFilesInDistDir = [
 
-    '.editorconfig',
-    '.gitattributes',
-    '.gitignore',
-    '.htaccess',
-    '404.html',
-    'apple-touch-icon.png',
-    'browserconfig.xml',
-    'crossdomain.xml',
+//     '.editorconfig',
+//     '.gitattributes',
+//     '.gitignore',
+//     '.htaccess',
+//     '404.html',
+//     'apple-touch-icon.png',
+//     'browserconfig.xml',
+//     'crossdomain.xml',
 
-    'css/', // for directories, a `/` character
-            // should be included at the end
-        'css/main.css',
-        'css/normalize.css',
+//     'css/', // for directories, a `/` character
+//             // should be included at the end
+//         'css/main.css',
+//         'css/normalize.css',
 
-    'doc/',
-        'doc/TOC.md',
-        'doc/css.md',
-        'doc/extend.md',
-        'doc/faq.md',
-        'doc/html.md',
-        'doc/js.md',
-        'doc/misc.md',
-        'doc/usage.md',
+//     'doc/',
+//         'doc/TOC.md',
+//         'doc/css.md',
+//         'doc/extend.md',
+//         'doc/faq.md',
+//         'doc/html.md',
+//         'doc/js.md',
+//         'doc/misc.md',
+//         'doc/usage.md',
 
-    'favicon.ico',
-    'humans.txt',
+//     'favicon.ico',
+//     'humans.txt',
 
-    'img/',
-        'img/.gitignore',
+//     'img/',
+//         'img/.gitignore',
 
-    'index.html',
+//     'index.html',
 
-    'js/',
-        'js/main.js',
-        'js/plugins.js',
-        'js/vendor/',
-            'js/vendor/jquery-' + pkg.devDependencies.jquery + '.min.js',
-            'js/vendor/modernizr-2.8.3.min.js',
+//     'js/',
+//         'js/main.js',
+//         'js/plugins.js',
+//         'js/vendor/',
+//             'js/vendor/jquery-' + pkg.devDependencies.jquery + '.min.js',
+//             'js/vendor/modernizr-2.8.3.min.js',
 
-    'LICENSE.txt',
-    'robots.txt',
-    'tile-wide.png',
-    'tile.png'
+//     'LICENSE.txt',
+//     'robots.txt',
+//     'tile-wide.png',
+//     'tile.png'
 
-];
+// ];
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -80475,17 +80475,17 @@ function checkFiles(directory, expectedFiles) {
 
 function runTests() {
 
-    describe('Test if all the expected files, and only them, are present in the build directories', function () {
+    // describe('Test if all the expected files, and only them, are present in the build directories', function () {
 
-        describe(dirs.archive, function () {
-            checkFiles(dirs.archive, expectedFilesInArchiveDir);
-        });
+    //     describe(dirs.archive, function () {
+    //         checkFiles(dirs.archive, expectedFilesInArchiveDir);
+    //     });
 
-        describe(dirs.dist, function () {
-            checkFiles(dirs.dist, expectedFilesInDistDir);
-        });
+    //     describe(dirs.dist, function () {
+    //         checkFiles(dirs.dist, expectedFilesInDistDir);
+    //     });
 
-    });
+    // });
 
 }
 
