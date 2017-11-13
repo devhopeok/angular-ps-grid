@@ -37,6 +37,9 @@ Please insert this module "angularPSGrid" into app.js file.
 ## Reference
 
 Prototype Project : https://github.com/gitofhenry/psGrid-prototype-npm
+
 Component code : https://github.com/gitofhenry/angular-ps-grid
+
 Test Project : https://github.com/gitofhenry/psGrid-test
+
 How bower is aware of the package : http://briantford.com/blog/angular-bower
